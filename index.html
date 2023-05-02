@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocPerscisr</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="sps">
+    <div class="title">
+        <div id="lt">
+            <h2>Rock Paper Seasor</h2>
+        </div>
+        
+        <div id="rt">
+         
+         <div id="us">
+         <div><h6>Your Score</h6></div>
+         <div id="uScore">0</div>
+        </div>
+        <div id="cs">
+            <div><h6>Computer Score</h6></div>
+            <div id="cScore">0</div>
+        </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="options">
+        
+       <div id="stone"> <img src="./images/stone.png" class="option"  height="80px" width="80px" alt="stone"></div>
+       <div class="downs">
+       <div id="paper"> <img src="./images/paper.png" class="option"  height="80px" width="80px" alt="paper"></div>
+       <div id="scissor"> <img src="./images/scissor.png" class="option"  height="80px" width="80px" alt="scissor"></div>
+       </div>
+    </div>
+    
+
+    <div class="popupplay" onclick="popplay()">
+        <span class="popuptextplay" id="myPopuplay">
+             <p class="emoji"></p>
+            <p class="comment"></p>
+            <button id="playagain">Play Again</button><button id="next" onclick="next()">next</button>
+            
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="popupnext" onclick="next()">
+        <span class="popuptextnext" id="myPopupnext">
+             <p class="emojhurry"></p>
+            
+            
+        </span>
+      </div>
+    <!-- to the next -->
+    <div class="popup" onclick="pop()"><button>Rules</button>
+        <span class="popuptext" id="myPopup">
+            <button id="close">x</button><h3>Game Rules</h3>
+            <p>
+                Rock beats scissors, scissors beat paper, and paper beats rock. 
+            </p>
+            <p>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p>
+            <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+            <p>If both players lay down the same hand, each player lays down another hand</p>
+        </span>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
